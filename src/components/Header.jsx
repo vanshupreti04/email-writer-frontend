@@ -2,18 +2,27 @@ import { Download } from "lucide-react"
 import emailLogo from "../assets/email-logo.webp"
 
 export default function Header() {
+
+  const handleDownload = () => {
+    const link = document.createElement("a")
+    link.href = "/email-reply-extension.zip"
+    link.setAttribute("download", "email-reply-extension.zip")
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
-    <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-8">
+    <header className="flex items-center justify-between h-16 px-8 bg-white border-b border-slate-200">
       
       {/* LEFT */}
       <div className="flex items-center gap-2">
 
-        {/* Logo Image */}
-        <div className="w-15 h-15 flex items-center justify-center">
+        <div className="flex items-center justify-center w-15 h-15">
           <img
             src={emailLogo}
             alt="ReplyAI Logo"
-            className="w-9 h-9 object-contain rounded-xl"
+            className="object-contain w-9 h-9 rounded-xl"
           />
         </div>
 
@@ -23,10 +32,14 @@ export default function Header() {
       </div>
 
       {/* RIGHT */}
-      <button className="btn-primary flex items-center gap-2">
+      <button 
+        onClick={handleDownload}
+        className="flex items-center gap-2 btn-primary"
+      >
         <Download className="w-4 h-4" />
         Download Extension
       </button>
+
     </header>
   )
 }
