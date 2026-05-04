@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================= GLOBAL RESET ================= */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden; /* 🚫 disables page scroll */
+}
+
+/* GLOBAL THEME */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #F9FAFB;
+  color: #0f172a;
+}
+
+/* ================= REUSABLE UI ================= */
+.card {
+  @apply bg-white border border-slate-200 rounded-2xl shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full transition;
+}
+
+.input {
+  @apply w-full bg-slate-50 border border-slate-200 rounded-xl p-3 focus:ring-2 focus:ring-emerald-500 outline-none;
+}
