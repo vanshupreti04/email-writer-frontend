@@ -1,16 +1,78 @@
-# React + Vite
+# 🚀 Email Reply AI – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based frontend for an AI-powered email reply assistant that generates intelligent responses using **Google Gemini API**.
 
-Currently, two official plugins are available:
+This frontend provides a clean SaaS interface and connects to a Spring Boot backend for generating AI-powered email replies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 🌐 Live Demo
+👉 https://your-vercel-link.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React.js (Vite)
+- 🎨 Tailwind CSS
+- 🔗 Axios (API integration)
+- 🌐 Vercel (Deployment)
+
+---
+
+# 🧠 Features
+
+- ⚡ Modern and responsive UI
+- 📩 AI-generated email replies using backend API
+- 🔗 Real-time communication with Spring Boot backend
+- 🚀 Optimized performance with Vite
+- 🖥️ Clean and minimal user experience
+
+---
+
+# 🔗 Backend Integration
+
+This frontend communicates with the backend API:
+
+👉 https://replyai.cfd/api/
+
+---
+
+## 📥 Chrome Extension
+
+On clicking the **Download Extension** button, a ZIP file will be downloaded.  
+Follow the instructions provided in the extension repository to complete the setup:
+
+👉 https://github.com/your-username/email-reply-extension
+
+---
+
+# 🚀 Deployment
+
+- Hosted on **Vercel**
+- Global CDN for fast performance
+- Auto-deployed from GitHub
+
+---
+
+# 📌 Project Purpose
+
+This frontend is part of a full-stack AI SaaS system enabling:
+
+- AI-powered email reply generation
+- Web-based user interface
+- Integration with backend services and Chrome extension
+
+---
+
+# 🔗 Related Repositories
+
+- 💻 Frontend → email-reply-frontend  
+- ⚙️ Backend → email-reply-backend  
+- 🔌 Chrome Extension → email-reply-extension  
+
+---
+
+# 🚀 Outcome
+
+A scalable frontend system designed for production-level AI SaaS integration.
